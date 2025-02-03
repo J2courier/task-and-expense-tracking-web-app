@@ -1,5 +1,7 @@
 
-
+body {
+    color: rgb(207, 207, 207);
+}
 nav {
     width: 100px;
     height: 100%;
@@ -7,7 +9,7 @@ nav {
     flex-direction: column;
 
     border-width: 0px 1px 0px 0px;
-    background-color: #292E34;
+    background-color: #252C3F;
     box-shadow: 0px 0px 5px #09090a;
 }
 
@@ -51,7 +53,7 @@ nav li img {
     height: 100%;
     /* border: solid 1px white; */
     /* border-width: 0px 0px 0px 1px; */
-    justify-content: center;
+    /* justify-content: center; */
     padding: 20px;
     display: flex;
     /* flex-direction: column; */
@@ -81,7 +83,7 @@ section {
 .task-list-container {
     border: solid 1px #52575C;
     border-radius: 5px;
-    background-color: #292E34;
+    background-color: #1d2230;
     display: flex;
      flex-direction: column;
     gap: 10px;
@@ -97,7 +99,7 @@ section {
     align-items: center;
     /* border: solid 1px white; */
     border-radius: 5px;
-    background-color: #1F2428   ;
+    /* background-color: #1F2428   ; */
     
     width: 100%;
     height: 7%;
@@ -134,7 +136,7 @@ section form {
 
 section form input {
     padding: 15px;
-    background-color: #1C2128;
+    background-color: #1d2230;
     border: solid 1px #52575C;
     color: white;
 }   
@@ -144,7 +146,7 @@ section form textarea {
     padding: 15px;
     resize: none;
     height: 100%;
-    background-color: #1C2128;
+    background-color: #1d2230;
     border: solid 1px #52575C;
     color: white;
 }   
@@ -173,7 +175,7 @@ section form textarea {
 }
 
 #addtask-btn {
-    background-color: #007806;
+    background-color: #025A42;
 
 }
 
@@ -184,7 +186,7 @@ section form textarea {
 }
 
 #addtask-btn:hover {
-    background-color: #00b309;
+    background-color: #009f75;
     border: solid 1px white;
     color: white;
 }

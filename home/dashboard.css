@@ -1,3 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0px;
+    letter-spacing: 2px;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #252C3F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+}
+
 nav {
     width: 100px;
     height: 100%;
@@ -5,7 +24,7 @@ nav {
     flex-direction: column;
 
     border-width: 0px 1px 0px 0px;
-    background-color: #292E34;
+    background-color: #252C3F;
     box-shadow: 0px 0px 5px #09090a;
 }
 
@@ -16,7 +35,8 @@ nav li {
 }
 
 nav li:hover {
-    filter: drop-shadow(0 0 15px rgba(153, 163, 173, 0.8));
+    filter: drop-shadow(0 0 15px #01806F) drop-shadow(0 0 25px #01ae97);
+    transform: translateX(5px);
 }
 
 nav li img {
@@ -75,7 +95,7 @@ section div {
 .task-card {
     /* border: solid 1px white; */
     border: solid 1px #52575C;
-    background-color:  #292E34;
+    background-color:  #1d2230;
     padding: 20px;
     height: 500px;
     display: flex;
@@ -85,7 +105,7 @@ section div {
 
 .task-card h1 {
     position: sticky;
-    background-color: #2F3439;
+    background-color: #1d2230;;
     /* border: solid 1px white; */
     top: -10px;
     padding: 10px;
@@ -93,7 +113,7 @@ section div {
 }
 
 .ongoing-task {
-    background-color: #2F3439;
+    background-color: #1d2230;  
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -120,7 +140,7 @@ section div {
 }
 
 .done-task {
-    background-color: #2F3439;
+    background-color: #1d2230;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -142,7 +162,8 @@ section div {
 .ongoing-task li:hover,
 .done-task li:hover {
     color: white;
-    background-color: #52575C;
+    background-color: #01806F;
+    /* filter: drop-shadow(0 0 5px #01806F); */
     border-radius: 5px;
 }
 
@@ -165,13 +186,13 @@ section div {
 
 .expense-chart {
     border: solid 1px #52575C;
-    background-color:  #292E34;
+    background-color:  #1d2230;
     grid-area: expns;
 }
 
 .bottom-chart {
     border: solid 1px #52575C;
-    background-color:  #292E34;
+    background-color:  #1d2230; 
     grid-area: ctn;
 }
 

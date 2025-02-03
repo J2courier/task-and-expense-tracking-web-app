@@ -33,12 +33,12 @@
     </div>
 
     <form action="task.php" method="post">
-        <label for="add-title">ADD-TITLE</label>
+        <label for="add-title">CREATE TITLE</label>
         <input type="text" name="add-title" placeholder="Title">
         <textarea name="description" id="list-description" placeholder="Description"></textarea>
         <div class="btn-container">
             <button id="cancel-btn">cancel</button>
-            <button id="addtask-btn">Add task</button>
+            <button id="addtask-btn">add task</button>
         </div>
         
     </form>

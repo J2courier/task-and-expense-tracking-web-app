@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="../home/index.css">
-    <link rel="stylesheet" href="../login.css">
+    <link rel="stylesheet"  href="../home/index.css?v=1.0.1">
+    <link rel="stylesheet" href="../login.css?v=1.0.1">
     <title>Login & Sign up</title>
 </head>
 <body>
     <style>
         body {
-            background-color: #2E5A2A;
+            background-color: #252C3F;
         }
         form {
             /* border: solid 1px white;        */

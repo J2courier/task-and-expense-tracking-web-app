@@ -9,19 +9,30 @@
 </head>
 <body>
     <style>
+        body {
+            background-color: #2E5A2A;
+        }
         form {
-            border: solid 1px white;       
+            /* border: solid 1px white;        */
             display: flex;
             flex-direction: column;
+            align-items: center;
             padding: 20px;
             width: 40%;
             gap: 20px;
         }
         form input {
             padding: 20px;
+            width: 100%;
         }        
+
+        form img {
+            height: 100px;
+            width: 100px;
+        }
     </style>       
-    <form action="index.php" method="post">
+    <form action="index.php" method="post" class="login-form">
+        <img src="../img/logo1.png" alt="img">
         <input type="text" name="username" placeholder="Enter Username">
         <input type="password" name="password" placeholder="Enter Password">
         <input type="submit" id="login_btn" value="login">

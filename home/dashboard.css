@@ -10,6 +10,7 @@ nav {
 }
 
 nav li {
+    transition: all 0.3s ease-in-out;
     position: relative;
     left: -40px;
 }
@@ -30,7 +31,7 @@ nav li img {
 }
 
 .logo {
-    filter: drop-shadow(0 0 15px rgba(111, 119, 127, 0.8));
+    filter: drop-shadow(0 0 15px rgba(210, 224, 245, 0.8));
     height: 70px;
     width: 70px;
     position: relative;
@@ -73,30 +74,50 @@ section div {
 
 .task-card {
     /* border: solid 1px white; */
+    border: solid 1px #52575C;
     background-color:  #292E34;
-    padding: 20px       ;
+    padding: 20px;
+    height: 500px;
     display: flex;
     gap: 10px;
+    grid-area: task;
 }
 
+.task-card h1 {
+    position: sticky;
+    background-color: #2F3439;
+    /* border: solid 1px white; */
+    top: -10px;
+    padding: 10px;
+    z-index: 1;
+}
 
 .ongoing-task {
     background-color: #2F3439;
-   width: 50%;
-
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow-y: auto;
+}
+
+.ongoing-task ul,
+.done-task ul {
+    width: 100%;
+    /* border: solid 1px white; */
 }
 
 .ongoing-task li {
     margin: 10px;
+    width: 100%;
     cursor: pointer;
     color: rgb(183, 183, 183);
     position: relative;
+    padding: 10px;
     left: -50px;
+    /* top: 30px; */
+    /* overflow: hidden; */
 }
-
 
 .done-task {
     background-color: #2F3439;
@@ -104,29 +125,52 @@ section div {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow-y: auto;
 }
 
 .done-task li {
     text-decoration: line-through;
     margin: 10px;
+    width: 100% ;
     cursor: pointer;
     position: relative;
     left: -50px;
+    padding: 10px;
     color: rgb(183, 183, 183);
 }
 
 .ongoing-task li:hover,
 .done-task li:hover {
     color: white;
+    background-color: #52575C;
+    border-radius: 5px;
+}
+
+.ongoing-task::-webkit-scrollbar,
+.done-task::-webkit-scrollbar {
+    width: 12px;
+}
+
+.ongoing-task::-webkit-scrollbar-track,
+.done-task::-webkit-scrollbar-track {
+    background: #2F3439;
+}
+
+.ongoing-task::-webkit-scrollbar-thumb,
+.done-task::-webkit-scrollbar-thumb {
+    background-color: #52575C;
+    border-radius: 10px;
+    border: 3px solid #2F3439;
 }
 
 .expense-chart {
+    border: solid 1px #52575C;
     background-color:  #292E34;
     grid-area: expns;
-    
 }
 
 .bottom-chart {
+    border: solid 1px #52575C;
     background-color:  #292E34;
     grid-area: ctn;
 }

@@ -10,13 +10,20 @@ nav {
 }
 
 nav li {
+    transition: all 0.3s ease-in-out;
+}
+
+
+nav li {
     position: relative;
     left: -40px;
 }
 
 nav li:hover {
     filter: drop-shadow(0 0 15px rgba(153, 163, 173, 0.8));
+    transform: translate(5px);
 }
+
 
 nav li img {
     margin-bottom: 20px;

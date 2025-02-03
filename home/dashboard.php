@@ -2,8 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../home/dashboard.css?v=1.0.1">
     <link rel="stylesheet" href="../home/index.css?v=1.0.1">
+    <link rel="stylesheet" href="../home/dashboard.css?v=1.0.1">
     <title>Dashboard</title>
 </head>
 <body>
@@ -30,12 +30,21 @@
                     <li>REST 30 minutes</li>
                     <li>WALK 30 minutes</li>
                     <li>READ 30 minutes</li>
+                    <li>REST 40 minutes</li>
+                    <li>WALK 30 minutes</li>
+                    <li>READ 30 minutes</li>
+                    <li>REST 30 minutes</li>    
+                    <li>WALK 30 minutes</li>
+                    <li>READ 30 minutes</li>
                     <li>REST 30 minutes</li>
                 </ul>
             </div>
             <div class="done-task">
-                <h2>COMPLETED TASK <span>(6)</span></h2>
+                <h1>COMPLETED TASK <span>(6)</span></h1>
                 <ul>
+                    <li>WALK 30 minutes</li>
+                    <li>READ 30 minutes</li>
+                    <li>REST 30 minutes</li>
                     <li>WALK 30 minutes</li>
                     <li>READ 30 minutes</li>
                     <li>REST 30 minutes</li>

@@ -2,8 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../home/index.css">
-    <link rel="stylesheet" href="../home/task.css">
+    <link rel="stylesheet" href="../home/index.css?v=1.0.1">
+    <link rel="stylesheet" href="../home/task.css?v=1.0.1">
     <title>Task</title>
 </head>
 <body>
@@ -17,6 +17,31 @@
     </ul>
 </nav>
 <section class="main-section">
+
+    <div class="task-list-container">
+
+        <div class="task-list-head">
+            <p>TASK LIST</p>
+            <img src="../img/add.png" alt="img" class="add-item-img">
+        </div>
+
+        <div class="item-list-container">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <form action="task.php" method="post">
+        <label for="add-title">ADD-TITLE</label>
+        <input type="text" name="add-title" placeholder="Title">
+        <textarea name="description" id="list-description" placeholder="Description"></textarea>
+        <div class="btn-container">
+            <button id="cancel-btn">cancel</button>
+            <button id="addtask-btn">Add task</button>
+        </div>
+        
+    </form>
 
 </section>
 </body>

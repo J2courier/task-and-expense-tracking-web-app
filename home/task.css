@@ -1,3 +1,5 @@
+
+
 nav {
     width: 100px;
     height: 100%;
@@ -14,9 +16,16 @@ nav li {
     left: -40px;
 }
 
+nav li {
+    transition: all 0.3s ease-in-out;
+}
+
+
 nav li:hover {
     filter: drop-shadow(0 0 15px rgba(153, 163, 173, 0.8));
+    transform: translate(5px);
 }
+
 
 nav li img {
     margin-bottom: 20px;
@@ -42,7 +51,10 @@ nav li img {
     height: 100%;
     /* border: solid 1px white; */
     /* border-width: 0px 0px 0px 1px; */
+    justify-content: center;
     padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
     
 }
 
@@ -64,4 +76,115 @@ section {
         'ctn expns'
     ;
     gap: 20px;
+}
+
+.task-list-container {
+    border: solid 1px #52575C;
+    border-radius: 5px;
+    background-color: #292E34;
+    display: flex;
+     flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 15%;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.task-list-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px white; */
+    border-radius: 5px;
+    background-color: #1F2428   ;
+    
+    width: 100%;
+    height: 7%;
+    padding: 10px;
+    gap: 70px;
+}
+
+.task-list-head p {
+    cursor: pointer;
+}
+
+.add-item-img {
+    width: 30px;
+    height: 30px;
+}
+
+.item-list-container {
+    /* border: solid 1px white; */
+   
+    height: 93%;
+    width: 100%;
+}
+
+section form {
+    /* border: solid 1px white;  */
+    height: 50%;
+    width: 50%;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    color: white;
+}
+
+section form input {
+    padding: 15px;
+    background-color: #1C2128;
+    border: solid 1px #52575C;
+    color: white;
+}   
+
+
+section form textarea {
+    padding: 15px;
+    resize: none;
+    height: 100%;
+    background-color: #1C2128;
+    border: solid 1px #52575C;
+    color: white;
+}   
+
+.btn-container {
+    /* border: solid 1px white; */
+   
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-container button {
+    padding: 10px;
+    border: solid 1px #E1E4E8;
+    color: #E1E4E8;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#cancel-btn {
+    background-color: #52575C;
+    /* outline: #E1E4E8; */
+   
+}
+
+#addtask-btn {
+    background-color: #007806;
+
+}
+
+#cancel-btn:hover {
+    background-color: #a7afb8;
+    border: solid 1px white;
+    color: white;
+}
+
+#addtask-btn:hover {
+    background-color: #00b309;
+    border: solid 1px white;
+    color: white;
 }
